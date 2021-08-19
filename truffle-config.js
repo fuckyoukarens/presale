@@ -21,7 +21,7 @@
    },
 
    /**
-    * @author Though it'll always use the first account to deploy, force the address in the config just in case
+    * @author Though it'll always use the first account to deploy, force the address in the config just in case using the 'from' param
     * 
     * List of BSC RPC endpoints is available at the following URL. The 1st and 2nd are generally SLOW, so use a different one!
     * https://docs.binance.org/smart-chain/developer/rpc.html
