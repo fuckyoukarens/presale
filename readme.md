@@ -5,6 +5,7 @@ This is the presale contract for FuK hosted on PADSwap's launchpad [https://dapp
 
 Deployments
 -----------
+Deployer: 0x5B359933F2c033c3B47527524A56f51835a5970A
 
 Network: test (id: 97)
   - FukPresale: 0x5C8b7Bdb5581eF95A005E088175ea279C299cd95

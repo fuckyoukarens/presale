@@ -8,7 +8,8 @@
  
  //Load up the correct wallet
  const mnemonic = fs.readFileSync(".secrets/.main").toString().trim();
- 
+ const apiKey = fs.readFileSync(".secrets/bscScan.apiKey").toString().trim();
+
  module.exports = {
 
    /** https://github.com/rkalis/truffle-plugin-verify */
@@ -16,7 +17,7 @@
      'truffle-plugin-verify'
    ],
    api_keys: {
-     bscscan: 'JNK9VUU7VYJQ3RN6BHFV8ZBC511V8YHSS6'
+     bscscan: apiKey
    },
 
    /**
@@ -29,7 +30,7 @@
    networks: {
      dev: { //Linked project in Ganache
        provider: () => new HDWalletProvider(mnemonic, 'http://127.0.0.1:7545'),
-       network_id: "5777",
+       network_id: "5777"
       },
       test: {
        provider: () => new HDWalletProvider(mnemonic, 'https://data-seed-prebsc-1-s3.binance.org:8545'),
@@ -37,8 +38,7 @@
        confirmations: 10,
        timeoutBlocks: 200,
        networkCheckTimeout: 1000000,
-       skipDryRun: true,
-       from: '0x5B359933F2c033c3B47527524A56f51835a5970A'
+       skipDryRun: true
      },
      bsc: {
        provider: () => new HDWalletProvider(mnemonic, 'https://bsc-dataseed.binance.org/'),
@@ -46,8 +46,7 @@
        confirmations: 10,
        timeoutBlocks: 200,
        networkCheckTimeout: 1000000,
-       skipDryRun: true,
-       from: '0x5B359933F2c033c3B47527524A56f51835a5970A'
+       skipDryRun: true
      },
    },
  
