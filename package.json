@@ -1,0 +1,20 @@
+{
+  "name": "presale",
+  "version": "1.0.0",
+  "description": "FuK Presale Contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.4.3",
+    "truffle": "^5.4.5",
+    "truffle-plugin-verify": "^0.5.11",
+    "zeppelin-solidity": "^1.12.0"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "author": "",
+  "license": "ISC"
+}
